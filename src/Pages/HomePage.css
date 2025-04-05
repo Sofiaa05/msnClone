@@ -1,0 +1,8 @@
+.background {
+    background: linear-gradient(to right, #9e895c, #f5e8c6 75%, #f6eac9 25%, #9c875b);
+    height: 100vh; /* Adjust height as needed */
+}
+  * {
+    margin: 0;
+    padding: 0;
+  }

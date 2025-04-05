@@ -1,0 +1,25 @@
+.icons {
+    position: relative;
+    height: 50px; /* Controls vertical space */
+}
+
+.leftContainer {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.rightContainer {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;         
+    align-items: center;   
+    gap: 20px;      
+}
+
+.appGridIcon, .settingsIcon{
+    color: rgb(255, 249, 249);
+    font-size: 20px;
+    cursor: pointer;
+}
