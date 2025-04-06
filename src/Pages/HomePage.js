@@ -9,9 +9,8 @@ const HomePage = () => {
     return(
         <div className="background">
             <Header />
-            <SearchBar/>
-            <WebsiteLinks/>
-
+            <SearchBar />
+            <WebsiteLinks />
         </div>
     );
 };
