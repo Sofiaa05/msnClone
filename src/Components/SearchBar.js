@@ -9,6 +9,12 @@ function SearchBar() {
     setQuery(e.target.value);
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter' && query.trim() !== '') {
+      window.open(`https://www.bing.com/search?q=${(query)}`, '_blank');
+    }
+  };
+
   return (
     <div className="search-bar-container">
       <FaSearch className="search-icon" />
@@ -18,6 +24,7 @@ function SearchBar() {
         placeholder="Search the web"
         value={query}
         onChange={handleInputChange}
+        onKeyDown={handleKeyPress}  // eventhandler runs a function when a key is pressed down on your keyboard.
       />
       <img src="/msnlogo.png" alt="MSN logo" className="msnLogo" />
     </div>
